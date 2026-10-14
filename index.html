@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatherhood FC · Real dads. Stronger together.</title>
+<meta name="description" content="Fatherhood FC is a club for dads: practical help, honest support and a community to get you through pregnancy, birth and beyond. Join the waiting list.">
+<meta property="og:title" content="Fatherhood FC">
+<meta property="og:description" content="Real dads. Stronger together. Join the waiting list.">
+<meta property="og:url" content="https://fatherhoodfc.co.uk/">
+<meta name="theme-color" content="#1F3D2B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 330 190%22%3E%3Cpath d=%22M0 1 H112 L109 41 H50 V63 H105 L102 98 H50 V183 L0 143 Z%22 fill=%22%231F3D2B%22/%3E%3Cpath d=%22M122 1 H222 L205 41 H165 V63 H202 L199 98 H165 V183 L122 146 Z%22 fill=%22%231F3D2B%22/%3E%3Cpath d=%22M232 1 H325 V46 H272 C264 46 259 52 259 60 V136 H325 L270 183 L217 150 V30 Z%22 fill=%22%231F3D2B%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #1F3D2B;
+    --green-deep: #17301F;
+    --cream: #F2ECDD;
+    --paper: #FFFDF8;
+    --gold: #D9A441;
+    --brick: #8C3B2E;
+    --ink: #1F3D2B;
+    --muted: #5D5F53;
+    --body: #3E4339;
+    --line: #DDD5C4;
+    --on-green-muted: #CFD9CB;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: 'Barlow', system-ui, sans-serif; font-size: 18px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: var(--ink); }
+  .wide { font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  .kicker { font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+
+  header.top { background: var(--green); color: var(--cream); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 16px; padding-bottom: 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; color: var(--cream); text-decoration: none; }
+  .brand span { font-size: 16px; }
+  .socials { display: flex; gap: 8px; }
+  .socials a { width: 44px; height: 44px; border-radius: 22px; border: 1px solid rgba(242,236,221,0.3); color: var(--cream); display: flex; align-items: center; justify-content: center; }
+  .socials a:hover { background: rgba(242,236,221,0.1); }
+
+  .hero { background: var(--green); color: var(--cream); padding: 56px 0 80px; }
+  .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+  .hero .kicker { color: var(--gold); }
+  .hero h1 { font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(38px, 6vw, 68px); line-height: 1; letter-spacing: -0.01em; margin: 14px 0 20px; }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero p.lead { font-size: 20px; color: #D6DFD2; margin: 0 0 28px; max-width: 34em; }
+  .lockup { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .lockup .rule { display: flex; align-items: center; gap: 14px; width: 100%; }
+  .lockup .rule i { flex: 1; height: 2px; background: var(--cream); }
+  .est { font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 700; font-size: 14px; letter-spacing: 0.3em; padding: 6px 14px 6px 18px; border: 2px solid var(--gold); color: var(--gold); border-radius: 4px; }
+
+  form.join { display: flex; flex-wrap: wrap; gap: 10px; max-width: 540px; }
+  form.join label { width: 100%; font-size: 15px; font-weight: 600; color: #D6DFD2; }
+  form.join input[type=email] { flex: 1 1 240px; min-height: 54px; padding: 0 16px; border-radius: 10px; border: 2px solid rgba(242,236,221,0.35); background: var(--green-deep); color: var(--cream); font: inherit; font-size: 17px; }
+  form.join input[type=email]::placeholder { color: #8FA394; }
+  form.join input[type=email]:focus { outline: none; border-color: var(--gold); }
+  form.join button { min-height: 54px; padding: 0 26px; border-radius: 10px; border: 0; background: var(--gold); color: var(--green); font: inherit; font-size: 17px; font-weight: 700; cursor: pointer; }
+  form.join button:hover { background: #E3B55A; }
+  form.join button[disabled] { opacity: 0.7; cursor: wait; }
+  .fine { width: 100%; font-size: 14px; color: #AFBEAD; margin: 4px 0 0; }
+  .msg { width: 100%; font-size: 15px; font-weight: 600; margin: 2px 0 0; min-height: 1.2em; }
+  .msg.ok { color: var(--gold); }
+  .msg.err { color: #F0B7AC; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+  .band { background: var(--gold); color: var(--green); padding: 14px 0; overflow: hidden; white-space: nowrap; }
+  .band div { font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 800; font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase; }
+
+  section.block { padding: 80px 0; }
+  .story .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 48px; }
+  .story h2, .features h2, .kit h2 { font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(30px, 4vw, 46px); line-height: 1.02; margin: 10px 0 0; }
+  .story .kicker, .features .kicker, .kit .kicker { color: var(--muted); }
+  .story .text p { margin: 0 0 18px; color: var(--body); font-size: 19px; }
+  .story .text p.pull { font-family: 'Archivo', sans-serif; font-stretch: 105%; font-weight: 700; font-size: 24px; line-height: 1.3; color: var(--ink); padding-top: 18px; position: relative; }
+  .story .text p.pull::before { content: ''; position: absolute; top: 0; left: 0; width: 48px; height: 4px; background: var(--gold); }
+  .sign { font-weight: 700; color: var(--ink); }
+
+  .features { background: var(--paper); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .features .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 36px; }
+  .card { background: var(--cream); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 8px; }
+  .card .num { font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 800; font-size: 14px; letter-spacing: 0.14em; color: var(--brick); }
+  .card h3 { margin: 0; font-size: 21px; }
+  .card p { margin: 0; font-size: 16px; color: var(--body); }
+  .stages { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .stages span { font-size: 14px; font-weight: 700; padding: 8px 14px; border-radius: 999px; background: var(--green); color: var(--cream); }
+
+  .kit .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+  .kit .text p { color: var(--body); font-size: 19px; margin: 16px 0 24px; }
+  .hoodie { aspect-ratio: 1 / 1; border-radius: 24px; background: #1A1F1B; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+  .hoodie .est { color: var(--gold); border-color: var(--gold); }
+  .btn { display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 999px; background: var(--green); color: var(--cream); text-decoration: none; font-weight: 700; }
+  .btn:hover { background: var(--green-deep); }
+
+  footer { background: var(--green); color: var(--on-green-muted); padding: 44px 0; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
+  footer p { margin: 0; max-width: 560px; line-height: 1.5; }
+  footer a { color: var(--cream); }
+
+  @media (max-width: 860px) {
+    .hero .wrap, .story .wrap, .kit .wrap { grid-template-columns: 1fr; gap: 36px; }
+    .hero { padding: 36px 0 56px; }
+    .lockup { order: -1; }
+    .lockup svg.mark { width: 180px; height: auto; }
+    section.block { padding: 56px 0; }
+    .hoodie { max-width: 420px; }
+  }
+  @media (max-width: 420px) {
+    .brand span { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Fatherhood FC home">
+      <svg aria-hidden="true" width="54" height="31" viewBox="0 0 330 190"><path d="M0 1 H112 L109 41 H50 V63 H105 L102 98 H50 V183 L0 143 Z" fill="#F2ECDD"/><path d="M122 1 H222 L205 41 H165 V63 H202 L199 98 H165 V183 L122 146 Z" fill="#F2ECDD"/><path d="M232 1 H325 V46 H272 C264 46 259 52 259 60 V136 H325 L270 183 L217 150 V30 Z" fill="#F2ECDD"/><path d="M264 136 V113 C264 105 270 100 278 100 H294 C301 100 305 104 307 110 L310 118 H316 V136 Z" fill="#F2ECDD"/><rect x="279" y="88" width="12" height="13" fill="#F2ECDD"/><ellipse cx="285" cy="78" rx="13" ry="15" fill="#F2ECDD"/><path d="M296 75 l6 6 l-6 1.5 z" fill="#F2ECDD"/><rect x="298" y="126" width="27" height="10" fill="#F2ECDD"/><ellipse cx="316" cy="119" rx="9" ry="12" fill="#F2ECDD" stroke="#1F3D2B" stroke-width="3"/><circle cx="314" cy="100" r="9" fill="#F2ECDD" stroke="#1F3D2B" stroke-width="3"/></svg>
+      <span class="wide">Fatherhood FC</span>
+    </a>
+    <nav class="socials" aria-label="Social">
+      <a href="https://www.instagram.com/fatherhoodfc" aria-label="Fatherhood FC on Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.facebook.com/fatherhoodfc" aria-label="Fatherhood FC on Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3.5h2V21h3.5v-8.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="kicker">The club for new dads · Coming soon</div>
+        <h1>Nobody hands you a manual. <em>So we're writing one, together.</em></h1>
+        <p class="lead">Practical help, honest support and a club of dads who get it. From getting ready, to pregnancy, to birth and beyond.</p>
+        <form class="join" id="join" novalidate>
+          <label for="email">Join the waiting list</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <div class="hp" aria-hidden="true"><label for="website">Leave this empty</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button type="submit" id="joinBtn">Join the club</button>
+          <p class="msg" id="joinMsg" role="status" aria-live="polite"></p>
+          <p class="fine">Free to join. We'll only email you about Fatherhood FC, and you can unsubscribe any time. The first 100 members get first dibs on the numbered founding hoodie.</p>
+        </form>
+      </div>
+      <div class="lockup" aria-label="Fatherhood FC, established 2026">
+        <svg class="mark" role="img" aria-label="Fatherhood FC monogram" width="260" height="150" viewBox="0 0 330 190"><path d="M0 1 H112 L109 41 H50 V63 H105 L102 98 H50 V183 L0 143 Z" fill="#F2ECDD"/><path d="M122 1 H222 L205 41 H165 V63 H202 L199 98 H165 V183 L122 146 Z" fill="#F2ECDD"/><path d="M232 1 H325 V46 H272 C264 46 259 52 259 60 V136 H325 L270 183 L217 150 V30 Z" fill="#F2ECDD"/><path d="M264 136 V113 C264 105 270 100 278 100 H294 C301 100 305 104 307 110 L310 118 H316 V136 Z" fill="#F2ECDD"/><rect x="279" y="88" width="12" height="13" fill="#F2ECDD"/><ellipse cx="285" cy="78" rx="13" ry="15" fill="#F2ECDD"/><path d="M296 75 l6 6 l-6 1.5 z" fill="#F2ECDD"/><rect x="298" y="126" width="27" height="10" fill="#F2ECDD"/><ellipse cx="316" cy="119" rx="9" ry="12" fill="#F2ECDD" stroke="#1F3D2B" stroke-width="3"/><circle cx="314" cy="100" r="9" fill="#F2ECDD" stroke="#1F3D2B" stroke-width="3"/></svg>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+          <div class="wide" style="font-size:30px;padding-left:0.12em">Fatherhood</div>
+          <div class="rule"><i></i><span class="wide" style="font-size:22px;letter-spacing:0.4em;padding-left:0.4em">FC</span><i></i></div>
+        </div>
+        <div class="est">EST. 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-hidden="true"><div>Real dads · Stronger together · Same team · New chapter · Real dads · Stronger together · Same team · New chapter</div></div>
+
+  <section class="block story" aria-labelledby="why">
+    <div class="wrap">
+      <div>
+        <div class="kicker">Why we started</div>
+        <h2 id="why">Harder than anyone told us.</h2>
+      </div>
+      <div class="text">
+        <p>My wife and I both work, and we went into parenthood with a picture of how it would go. It turned out to be harder than either of us expected, in more ways than I can count.</p>
+        <p class="pull">We've had great nights. We've also had the worst nights, the ones that spiral on no sleep, then a day at work on cup after cup of coffee.</p>
+        <p>As a dad you feel everything. You're protecting your partner and your baby while your own life changes overnight. And half the time you're not sure who to ask, or how to actually help.</p>
+        <p>Fatherhood FC is for that. A club where dads come together to build a community and a support network, from preparation and pregnancy to birth and beyond.</p>
+        <p class="sign">Alex, founder and new dad, Yorkshire</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block features" aria-labelledby="whats">
+    <div class="wrap">
+      <div class="kicker">What's coming</div>
+      <h2 id="whats">An app that changes with you.</h2>
+      <div class="grid">
+        <div class="card"><div class="num">01</div><h3>Your plan for today</h3><p>One job, one tip and one thing for your partner, based on where you are.</p></div>
+        <div class="card"><div class="num">02</div><h3>The bump report</h3><p>Week by week through the pregnancy, with sizes compared to things you actually own.</p></div>
+        <div class="card"><div class="num">03</div><h3>Sleep kit</h3><p>What tog and how many layers for tonight's room temperature.</p></div>
+        <div class="card"><div class="num">04</div><h3>Fuel</h3><p>Simple meals by how much time you've got, from 10 minutes to a proper cook.</p></div>
+        <div class="card"><div class="num">05</div><h3>Check-in</h3><p>A 30-second weekly check on your head, with real help one tap away.</p></div>
+        <div class="card"><div class="num">06</div><h3>Savings</h3><p>Money you're entitled to, discounts for members, and ways to spend less.</p></div>
+      </div>
+      <div class="stages" aria-label="Stages covered"><span>Planning</span><span>Pregnancy</span><span>Birth</span><span>The first year</span><span>Beyond</span></div>
+    </div>
+  </section>
+
+  <section class="block kit" aria-labelledby="kit">
+    <div class="wrap">
+      <div class="hoodie" role="img" aria-label="Black hoodie with the FFC mark and Est. 2026">
+        <svg aria-hidden="true" width="190" height="109" viewBox="0 0 330 190"><path d="M0 1 H112 L109 41 H50 V63 H105 L102 98 H50 V183 L0 143 Z" fill="#F2ECDD"/><path d="M122 1 H222 L205 41 H165 V63 H202 L199 98 H165 V183 L122 146 Z" fill="#F2ECDD"/><path d="M232 1 H325 V46 H272 C264 46 259 52 259 60 V136 H325 L270 183 L217 150 V30 Z" fill="#F2ECDD"/><path d="M264 136 V113 C264 105 270 100 278 100 H294 C301 100 305 104 307 110 L310 118 H316 V136 Z" fill="#F2ECDD"/><rect x="279" y="88" width="12" height="13" fill="#F2ECDD"/><ellipse cx="285" cy="78" rx="13" ry="15" fill="#F2ECDD"/><path d="M296 75 l6 6 l-6 1.5 z" fill="#F2ECDD"/><rect x="298" y="126" width="27" height="10" fill="#F2ECDD"/><ellipse cx="316" cy="119" rx="9" ry="12" fill="#F2ECDD" stroke="#1A1F1B" stroke-width="3"/><circle cx="314" cy="100" r="9" fill="#F2ECDD" stroke="#1A1F1B" stroke-width="3"/></svg>
+        <div class="est">EST. 2026</div>
+      </div>
+      <div class="text">
+        <div class="kicker">The founding hoodie</div>
+        <h2 id="kit">Wear the year they arrived.</h2>
+        <p>The FFC mark with your kid's year underneath. The first 100 will be numbered, and waiting-list members get first dibs.</p>
+        <a class="btn" href="#join" onclick="setTimeout(function(){document.getElementById('email').focus()},400)">Get on the list</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Fatherhood FC offers support and information, not medical advice. If you're worried about your baby, your partner or yourself, speak to your midwife, health visitor or GP. In an emergency, call 999. Need to talk now? Samaritans are free on 116 123, any time.</p>
+    <p>© 2026 Fatherhood FC</p>
+  </div>
+</footer>
+
+<script>
+  /* ===== Connect your MailerLite form here =====
+     In MailerLite: Forms > Embedded forms > your form > Overview > HTML code.
+     Find the line with  action="https://assets.mailerlite.com/jsonp/.../forms/.../subscribe"
+     and paste that full address between the quotes below. */
+  var MAILERLITE_ACTION = "";
+
+  var form = document.getElementById('join');
+  var email = document.getElementById('email');
+  var btn = document.getElementById('joinBtn');
+  var msg = document.getElementById('joinMsg');
+
+  function say(text, kind) { msg.textContent = text; msg.className = 'msg ' + (kind || ''); }
+  email.addEventListener('input', function () { if (msg.classList.contains('err')) say(''); });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var value = email.value.trim();
+    if (document.getElementById('website').value) return;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) { say('Enter a valid email address.', 'err'); email.focus(); return; }
+    if (!MAILERLITE_ACTION) { say('Sign-ups open very soon. Follow us on Instagram in the meantime.', 'err'); return; }
+    btn.disabled = true; btn.textContent = 'Joining…';
+    var data = new FormData();
+    data.append('fields[email]', value);
+    data.append('ml-submit', '1');
+    data.append('anticsrf', 'true');
+    fetch(MAILERLITE_ACTION, { method: 'POST', body: data })
+      .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
+      .then(function (res) {
+        if (res && res.success) { form.reset(); say("You're in. Welcome to the club. Check your inbox.", 'ok'); }
+        else { say("That didn't go through. Please try again.", 'err'); }
+      })
+      .catch(function () { say("That didn't go through. Check your connection and try again.", 'err'); })
+      .then(function () { btn.disabled = false; btn.textContent = 'Join the club'; });
+  });
+</script>
+</body>
+</html>
